@@ -71,7 +71,7 @@ const main = async () => {
     title: document.getElementById("title"),
     url: document.getElementById("url"),
     description: document.getElementById("description"),
-    favicon: document.getElementById("favicon"),
+    favicon: document.getElementById("favicon-img"),
     save: document.getElementById("save-button"),
   };
 
@@ -92,7 +92,7 @@ const main = async () => {
   // fill form values with tab info
   formItems.title.value = tabInfo.title;
   formItems.url.value = tabInfo.url;
-  formItems.favicon.value = tabInfo.favIconUrl;
+  formItems.favicon.src = tabInfo.favIconUrl;
   // add value to description its a textarea
   formItems.description.innerHTML = tabInfo.description;
 

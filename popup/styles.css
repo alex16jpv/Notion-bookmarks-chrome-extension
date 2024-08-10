@@ -133,3 +133,23 @@ button[type="submit"]:hover {
 .save-link:hover {
   background: #1a6ad9;
 }
+
+.url-favicon-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.url-favicon-container input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 4px 0 0 4px;
+  border: 1px solid #ddd;
+}
+
+.url-favicon-container img {
+  width: 16px;
+  height: 16px;
+  border-radius: 0 4px 4px 0;
+  margin-left: -1px; /* Adjust to overlap border */
+}

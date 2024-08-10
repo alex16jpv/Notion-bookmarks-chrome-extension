@@ -16,7 +16,10 @@
         <form id="bookmark-form">
           <div class="form-group">
             <label for="url">URL</label>
-            <input type="text" id="url" name="url" />
+            <div class="url-favicon-container">
+              <img id="favicon-img" src="" alt="Favicon" />
+              <input type="text" id="url" name="url" placeholder="Enter URL" />
+            </div>
           </div>
           <div class="form-group">
             <label for="title">Title</label>
@@ -26,11 +29,6 @@
             <label for="description">Description</label>
             <textarea id="description" name="description"></textarea>
           </div>
-          <div class="form-group">
-            <label for="favicon">Favicon</label>
-            <input type="text" id="favicon" name="favicon" readonly />
-          </div>
-          <!-- <div type="submit" id="save">Save</div> -->
           <div class="form-group">
             <a href="#" id="save-button" class="save-link">Save</a>
           </div>
